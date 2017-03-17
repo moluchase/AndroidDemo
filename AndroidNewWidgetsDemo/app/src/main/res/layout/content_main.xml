@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_coordinatorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!--
+          AppBarLayout必须是可以响应
+      -->
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/id_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:title="@string/toolbar_title"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/id_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/main_white"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_floatingactionbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_action_plusone"
+        app:backgroundTint="@color/fab_red"
+        android:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/main_blue_dark"/>
+
+</android.support.design.widget.CoordinatorLayout>

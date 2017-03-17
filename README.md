@@ -1,6 +1,6 @@
 # AndroidDemo
 关于AndroidNewWidgetsDemo<br/>
-按照http://www.jianshu.com/p/533f5ecee306重写了一遍
+按照http://www.jianshu.com/p/533f5ecee306
 
 一些笔记
 http://www.jianshu.com/p/533f5ecee306 

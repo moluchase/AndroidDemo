@@ -125,21 +125,22 @@ http://developer.android.com/guide/topics/ui/menus.html
 <br>
 <br>
 <br>
-关于Mushroom
-基于上面的Demo
+关于Mushroom<br>
+基于上面的Demo<br>
 
-这是一款针对食用菌的APP软件，全部数据来源于对此网站的爬虫http://www.emushroom.net/ （仅作为测试Demo，并非用于商业行为）
+这是一款针对食用菌的APP软件，全部数据来源于对此网站的爬虫http://www.emushroom.net/ （仅作为测试Demo，并非用于商业行为）<br>
 
-关于Mushroom的框架，采用的是http://www.jianshu.com/p/533f5ecee306 ，即Material Design Library，详见官网
-最好是看完上面网站的Demo后（关于此详细讲解，见https://github.com/moluchase/AndroidDemo ），在来学习此Demo
+关于Mushroom的框架，采用的是http://www.jianshu.com/p/533f5ecee306 ，即Material Design Library，详见官网<br>
+最好是看完上面网站的Demo后（关于此详细讲解，见https://github.com/moluchase/AndroidDemo ），在来学习此Demo<br>
 
 
-需要改进的地方
-1.关于WIFI连接，但是无法上网的问题，导致判断失误，造成无法联网的情况下，去执行可以上网的相关操作
-相关资料http://blog.csdn.net/never_cxb/article/details/47658257
-并没有解决
-
-2.关于第一次导入数据的问题，速度相当慢，如何实现用户快速的体验感
-（1） 我只是简单的将很多条数据在下载时一次性全部载入了
-（2） 在执行刷新时，当能联网时，我做的是将当前刷新页面的数据全部从数据库中删除，然后再次获取数据，这样导致刷新缓慢，如何只添加更新的消息
-3.智能化推荐
+需要改进的地方<br>
+1.关于WIFI连接，但是无法上网的问题，导致判断失误，造成无法联网的情况下，去执行可以上网的相关操作<br>
+相关资料http://blog.csdn.net/never_cxb/article/details/47658257<br>
+并没有解决<br>
+<br>
+2.关于第一次导入数据的问题，速度相当慢，如何实现用户快速的体验感<br>
+（1） 我只是简单的将很多条数据在下载时一次性全部载入了<br>
+（2） 在执行刷新时，当能联网时，我做的是将当前刷新页面的数据全部从数据库中删除，然后再次获取数据，这样导致刷新缓慢，如何只添加更新的消息<br>
+<br>
+3.智能化推荐<br>

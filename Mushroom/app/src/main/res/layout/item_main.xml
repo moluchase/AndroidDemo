@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--关于foreground的使用，见http://jp1017.github.io/2016/01/21/CardView-%E8%AE%BE%E7%BD%AE-selector/-->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_gravity="center_horizontal"
+    android:foreground="@drawable/card_foreground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="6dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <!--关于TextView中的textStyle见http://www.jianshu.com/p/94e0f9ab3f1d-->
+        <TextView
+            android:id="@+id/essay_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/essay_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/essay_title"/>
+        <TextView
+            android:id="@+id/essay_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_below="@+id/essay_introduction"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

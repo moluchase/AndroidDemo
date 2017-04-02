@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_titles">
+        <item>国内动态</item>
+        <item>湖北专版</item>
+        <item>栽培技术</item>
+        <item>栽培研究</item>
+        <item>蘑菇食谱</item>
+        <item>菇菌营养</item>
+        <item>收藏板块</item>
+
+
+    </string-array>
+    <string-array name="tab_urls">
+        <item>"http://www.emushroom.net/news/guonei/"</item>
+        <item>"http://hubei.emushroom.net/"</item>
+        <item>"http://www.emushroom.net/edu/zaipeijishu/"</item>
+        <item>"http://www.emushroom.net/edu/zaipeiyanjiu/"</item>
+        <item>"http://www.emushroom.net/health/1001/"</item>
+        <item>"http://www.emushroom.net/health/1000/"</item>
+        <item>"#"</item>
+
+    </string-array>
+</resources>

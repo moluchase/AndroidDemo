@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/essay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--
+    下面是制造视觉效果，其中一定要使imageview在toolbar的上面，才能保证向上滑动时退出imageview
+
+    -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/essay_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+            <ImageView
+                android:id="@+id/essay_image"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:minHeight="100dp"
+                android:src="@drawable/ic_essay"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/essay_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+<!--下面的滑动界面和Scrollview一样，但是只能用support的view才能和AppBarLayout相互响应-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            android:id="@+id/essay_scrollview_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp"
+            android:textSize="28sp"
+            />
+        </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

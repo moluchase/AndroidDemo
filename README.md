@@ -1,5 +1,5 @@
 # AndroidDemo<br/>
-# AndroidNewWidgetsDemo<br/>
+# (1)AndroidNewWidgetsDemo<br/>
 按照http://www.jianshu.com/p/533f5ecee306<br/>
 
 一些笔记<br/>
@@ -125,7 +125,8 @@ http://developer.android.com/guide/topics/ui/menus.html <br/>
 <br>
 <br>
 <br>
-# Mushroom<br>
+# (2)Mushroom<br/>
+
 基于上面的Demo<br>
 
 这是一款针对食用菌的APP软件，全部数据来源于对此网站的爬虫http://www.emushroom.net/ （仅作为测试Demo，并非用于商业行为）<br>
